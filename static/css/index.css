@@ -133,5 +133,49 @@ body {
   font-size: smaller;
 }
 
+/* Video styles */
+video {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+video.loading {
+  opacity: 0.5;
+}
+
+.video-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.video-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3273dc;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
 
 
