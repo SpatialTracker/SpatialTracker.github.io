@@ -122,7 +122,7 @@
 
             <!-- Github link -->
             <span class="link-block">
-              <a href="https://github.com/YOUR REPO HERE" target="_blank"
+              <a href="https://github.com/henry123-boy/SpaTrackerV2" target="_blank"
               class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                 <i class="fab fa-github"></i>
@@ -173,9 +173,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            SpatialTrackerV2 is a <strong>novel framework for 3D point tracking</strong> that estimates world-space 3D trajectories for arbitrary 2D pixels in monocular videos. Unlike previous methods that rely on offline depth and pose estimators, our approach decomposes 3D motion into scene geometry, camera ego-motion, and fine-grained point-wise motion, all within a <strong>fully differentiable, end-to-end architecture</strong>.
-            <br><br>
-            This unified design enables <strong>scalable training across diverse data sources</strong>, including synthetic sequences, posed RGB-D videos, and unlabeled in-the-wild footage. By jointly learning geometry and motion, SpatialTrackerV2 achieves significant improvements—<strong>outperforming prior 3D tracking methods by over 30%</strong>, while also delivering <strong>strong results in 2D tracking and dynamic 3D reconstruction</strong>.
+            SpatialTrackerV2 is a <strong>novel framework for 3D point tracking</strong> that estimates world-space 3D trajectories for arbitrary 2D pixels in monocular videos. Unlike previous methods that rely on offline depth and pose estimators, our approach decomposes 3D motion into scene geometry, camera ego-motion, and fine-grained point-wise motion, all within a <strong>fully differentiable, end-to-end architecture</strong>. This unified design enables <strong>scalable training across diverse data sources</strong>, including synthetic sequences, posed RGB-D videos, and unlabeled in-the-wild footage. By jointly learning geometry and motion, SpatialTrackerV2 achieves significant improvements—<strong>outperforming prior 3D tracking methods by over 30%</strong>, while also delivering <strong>strong results in 2D tracking and dynamic 3D reconstruction</strong>.
           </p>
         </div>
       </div>
@@ -183,6 +181,26 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Method section -->
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our method introduces a unified framework that jointly estimates 3D point trajectories, camera motion, and scene geometry from monocular videos. The key innovation lies in decomposing 3D motion into three components: <strong>scene geometry</strong>, <strong>camera ego-motion</strong>, and <strong>fine-grained point-wise motion</strong>.
+          </p>
+          <p>
+            Unlike previous approaches that rely on pre-computed depth maps and camera poses, SpatialTrackerV2 learns these components end-to-end through a fully differentiable architecture. This enables scalable training across diverse data sources and significantly improves tracking accuracy while maintaining real-time performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method section -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
