@@ -96,7 +96,7 @@
             </div>
 
             <div class="is-size-5 publication-institutions">
-              <span class="institution-block"><sup>1</sup>CAD&CG, Zhejiang University, <sup>2</sup>University of Oxford, <sup>3</sup>Ant Research, <sup>4</sup>Pixelwise AI, <sup>5</sup>NUS</span>
+              <span class="institution-block"><sup>1</sup>CAD&CG, Zhejiang University, <sup>2</sup>University of Oxford, <sup>3</sup>Ant Research, <sup>4</sup>Pixelwise AI, <sup>5</sup>Bytedance Seed</span>
             </div>
 
             <div class="column has-text-centered">
@@ -173,9 +173,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            SpatialTrackerV2 is the <strong>first unified, end-to-end 3D point tracking model</strong> that simultaneously estimates 2D/3D point trajectories, dynamic probabilities, camera motion, and consistent video depth from any monocular video.
-            Benefiting from large-scale, end-to-end training across diverse video sources — including synthetic, posed RGB-D, and in-the-wild data — SpatialTrackerV2 outperforms previous state-of-the-art 3D tracking methods by <strong>30% improvement</strong>, and achieves <strong>80% improvement</strong> compared to SpatialTrackerV1.
-            It also sets a <strong>new state-of-the-art</strong> on 2D tracking benchmarks, while serving as an efficient dynamic reconstruction system, matching the quality of recent high-capacity models like MegaSAM at <strong>50× faster inference speed</strong>.
+            SpatialTrackerV2 is a <strong>novel framework for 3D point tracking</strong> that estimates world-space 3D trajectories for arbitrary 2D pixels in monocular videos. Unlike previous methods that rely on offline depth and pose estimators, our approach decomposes 3D motion into scene geometry, camera ego-motion, and fine-grained point-wise motion, all within a <strong>fully differentiable, end-to-end architecture</strong>.
+            <br><br>
+            This unified design enables <strong>scalable training across diverse data sources</strong>, including synthetic sequences, posed RGB-D videos, and unlabeled in-the-wild footage. By jointly learning geometry and motion, SpatialTrackerV2 achieves significant improvements—<strong>outperforming prior 3D tracking methods by over 30%</strong>, while also delivering <strong>strong results in 2D tracking and dynamic 3D reconstruction</strong>.
           </p>
         </div>
       </div>
